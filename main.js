@@ -38,6 +38,7 @@ function addBug(){
 }
 function catchBug(){
     score++
+    scoreEL.textContent=score
     this.classList.add("caught")
     setTimeout(()=>{
         this.remove()

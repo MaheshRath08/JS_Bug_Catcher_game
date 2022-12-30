@@ -15,11 +15,12 @@
     padding: 0.5rem 2rem;
     font-size: 1.1rem;
     border: none;
-    background-color: rgb(102, 212, 161);
+    background-color: rebeccapurple;
     color: #fff;
     text-shadow: 0 0 5px black;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.555);
     border-radius: 5px;
+    cursor: pointer;
 }
 .game-container{
     position: relative;
@@ -35,7 +36,10 @@
 }
 .game-container img{
     width: 100%;
-    cursor: pointer;
+    cursor:crosshair;
+}
+.game-container img:hover{
+    transform: scale(1.1);
 }
 .hide{
     visibility: hidden;

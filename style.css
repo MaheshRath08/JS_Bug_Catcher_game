@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+.menu{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.menu button{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    background-color: rgb(102, 212, 161);
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.555);
+    border-radius: 5px;
+}
+.game-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(173, 253, 253);
+}
+.game-container div{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+.game-container img{
+    width: 10%;
+    cursor: pointer;
+}
+.hide{
+    visibility: hidden;
+}

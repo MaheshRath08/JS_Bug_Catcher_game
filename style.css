@@ -26,6 +26,7 @@
     height: 100vh;
     width: 100vw;
     background-color: rgb(173, 253, 253);
+    overflow: hidden;
 }
 .game-container div{
     display: flex;
@@ -44,7 +45,7 @@
     position: absolute;
 }
 .caught{
-    animation: caught .6s linear;
+    animation: caught .6s ease-in-out;
 }
 
 @keyframes caught {

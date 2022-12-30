@@ -33,9 +33,21 @@
     justify-content: center;
 }
 .game-container img{
-    width: 10%;
+    width: 100%;
     cursor: pointer;
 }
 .hide{
     visibility: hidden;
+}
+.bugCont{
+    width: 5%;
+    position: absolute;
+}
+.caught{
+    animation: caught 1.5s ease-in-out;
+}
+
+@keyframes caught {
+    0%{transform: scale(1.2);}
+    100%{transform: scale(0.1);}
 }

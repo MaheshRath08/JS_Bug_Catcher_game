@@ -41,6 +41,6 @@ function catchBug(){
     this.classList.add("caught")
     setTimeout(()=>{
         this.remove()
-    },1500)
+    },500)
     addBug()
 }

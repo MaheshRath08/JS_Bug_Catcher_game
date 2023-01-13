@@ -4,6 +4,7 @@ const gameCont = document.querySelector(".game-container")
 const timeEl = document.querySelector(".time")
 const scoreEL = document.querySelector(".score")
 
+let sfx = new Audio("/assets/arrow.wav")
 let score = 0
 
 menuBtn.addEventListener("click", ()=>{
@@ -37,6 +38,7 @@ function addBug(){
     setTimeout(createBug, 1200)
 }
 function catchBug(){
+    sfx.play()
     score++
     scoreEL.textContent=score
     this.classList.add("caught")

@@ -38,6 +38,8 @@ function addBug(){
     setTimeout(createBug, 1200)
 }
 function catchBug(){
+    sfx.pause()
+    sfx.currentTime = 0
     sfx.play()
     score++
     scoreEL.textContent=score

@@ -5,6 +5,7 @@ const timeEl = document.querySelector(".time")
 const scoreEL = document.querySelector(".score")
 
 let sfx = new Audio("/assets/arrow.wav")
+let seconds = 0
 let score = 0
 
 menuBtn.addEventListener("click", ()=>{
@@ -14,6 +15,7 @@ menuBtn.addEventListener("click", ()=>{
 })
 function theGame(){
     createBug()
+    setInterval(increaseTime,1000)
 }
 function randPos(){
     let width = window.innerWidth
@@ -48,4 +50,13 @@ function catchBug(){
         this.remove()
     },500)
     addBug()
+}
+
+function increaseTime(){
+    let m = Math.floor(seconds/60)
+    let s = seconds % 60
+    m = m < 10 ? `0${m}` : m
+    s = s < 10 ? `0${s}` : s
+    timeEl.textContent = `${m}:${s}`
+    seconds++
 }

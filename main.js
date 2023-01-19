@@ -18,10 +18,12 @@ function theGame(){
     setInterval(increaseTime,1000)
 }
 function randPos(){
-    let width = window.innerWidth
-    let height = window.innerHeight
-    let x = Math.random() * (width-200)+100
-    let y = Math.random() * (height-200)+100
+    // let width = window.innerWidth
+    // let height = window.innerHeight
+    // let x = Math.random() * (width-200)+100
+    // let y = Math.random() * (height-200)+100
+    let x = Math.random() * 80 
+    let y = Math.random() * 80 + 10
 
     return {x,y}
 }
@@ -31,8 +33,10 @@ function createBug(){
     gameCont.appendChild(bug)
     bug.classList.add("bugCont")
     bug.innerHTML =`<img src="assets/bug.png" alt="bug">`
-    bug.style.left = `${x}px`
-    bug.style.top = `${y}px`
+    bug.style.left = `${x}vw`
+    bug.style.top = `${y}vh`
+    // bug.style.left = `${x}px`
+    // bug.style.top = `${y}px`
     bug.addEventListener("click", catchBug)
 }
 function addBug(){
